@@ -3,7 +3,7 @@ body
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    overflow-x: hidden;
 }
 
 .hero_section
@@ -28,6 +28,29 @@ transform: translatex(-100%);
 }
 
 } 
+/* slide start */
+.carousel-control-next-icon,.carousel-control-prev-icon
+{
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 50%;
+    width:20px;
+    height:20px;
+
+}
+.carousel
+{
+margin:20px;
+border-radius: 12px;
+height:40vh;
+box-shadow:9px 9px 5px  rgb(83, 73, 46)
+}
+.carousel-inner
+{
+    height:100%;
+    border-radius: 12px;
+}
+/* slide end */
 
 .content {
     display: none;
