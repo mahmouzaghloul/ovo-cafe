@@ -8,11 +8,48 @@ body
 
 .hero_section
 { 
-    background-color: rgb(42, 77, 108);
+    background-image: linear-gradient(220deg,green,black);
     width: 100vw;
-    height:60vh;
+    height:70vh;
+}
+.img_veiw
+{
+height:90%;
+width: 100vw;
+display: block;
+animation: rote 3s ease-in-out;
+transition: all 4S ease-in-out;
+background-position: center;
+background-size: cover; 
 }
 
+@keyframes rote
+{
+    0%
+    {
+        transform:translatey(-1000px) 
+       }
+}
+.perant_menu
+{
+height:9%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.menu
+{
+color: aliceblue;
+text-decoration: none;
+transition: all .3s ease-in-out;
+}
+.menu:hover,.menu:active
+{
+color: red;
+
+}
 .logo_hero_section
 {
 width: 100vw;
@@ -43,8 +80,9 @@ transform: translatex(-100%);
 margin:20px;
 border-radius: 12px;
 height:25vh;
-box-shadow:9px 9px 5px rgb(83, 73, 46)
+box-shadow:9px 9px 5px rgb(83, 73, 46);
 }
+
 .carousel-inner
 {
     height:100%;
@@ -74,33 +112,39 @@ box-shadow:9px 9px 5px rgb(83, 73, 46)
 .link
 {
 min-width:100px;
-height:20px;
-  color: black;
-  font-size: 15px;
-  font-weight: 400;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+height:25px;
+color: white;
+background-image: linear-gradient(20deg,green,black);
+font-size: 14px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius:20px;
+font-weight: 400;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+transition: all 1s ease-in-out;
 }
 .link:hover,.link:active
 {
-
-  color:rgb(96, 47, 47);
-  height: 100%;
-  display: block;
-  font-size: 15px;
-  font-weight: 400;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+    background-image:none;
+    background-color: black;
 }
 
 .title_cards
 {
- text-align: center;
-background-color:rgb(65 63 59 / 37%) ;
- color: rgb(65, 63, 59);
  transition: all 2s ease-in-out ;
  animation: t_c  1s ease-in-out ;
- padding:10px;
+ background-image: linear-gradient(20deg,green,black);
+ color: aliceblue;
+ width: 140px;
+ height:30px;
+ margin:30px auto;
+ font-size: 15px;
+ display: flex;
+ align-items: center;
+ border-radius: 50px;
+ justify-content: center;
 }
 .card_1
 {
@@ -111,7 +155,6 @@ background-color:rgb(65 63 59 / 37%) ;
 {
     transition: all .2s ease-in-out ;
     animation: t_c  3s ease-in-out ;
-    background-color: rgb(42, 77, 108);
 }
 
 
