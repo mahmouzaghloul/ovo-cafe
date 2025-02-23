@@ -165,9 +165,9 @@ justify-content: end;
     justify-content: center;
 }
 
-botton
+.botton
 {
-    margin-bottom:50px;
+    margin-bottom:150px;
     color: aliceblue;
     background-image:linear-gradient(to right,green,black);
     font-size: 18px;
