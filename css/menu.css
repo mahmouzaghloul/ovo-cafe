@@ -38,9 +38,11 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 
+
 }
 .menu
 {
+    margin:4px;
 color: aliceblue;
 text-decoration: none;
 transition: all .3s ease-in-out;
@@ -94,6 +96,9 @@ box-shadow:9px 9px 5px rgb(83, 73, 46);
     display: none;
     font-size: 24px;
     font-weight: bold;
+    padding-top:30px;
+    border: 1px solid white;
+    background-image: linear-gradient(90deg,rgb(48, 87, 48),black,green);
 }
 .dddd
 {
@@ -135,11 +140,12 @@ transition: all 1s ease-in-out;
 {
  transition: all 2s ease-in-out ;
  animation: t_c  1s ease-in-out ;
- background-image: linear-gradient(20deg,green,black);
- color: aliceblue;
+ background-image: linear-gradient(20deg,#808080c9,#009644ad);
+ color: white;
  width: 140px;
  height:30px;
- margin:30px auto;
+ margin-inline:  auto;
+ margin-bottom:30px;
  font-size: 15px;
  display: flex;
  align-items: center;
@@ -191,10 +197,13 @@ flex-direction: column;
 justify-content: space-between;
 transition: all 1s ease-in-out;
 }
-.card:hover
+.card_1:hover,.card_1:active  
 { 
-transform: scalex(1.1);
-transform: scaley(1.2);
+    transform: scale(1.1)
+}
+.card_2:hover,.card_2:active  
+{ 
+transform: scale(.9)
 }
 
 .perant_img
@@ -227,3 +236,65 @@ color: black;
 }
 
 
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) 
+{ 
+    .cards
+    {
+    padding-inline: 10px;
+    display: block;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(7,1fr);
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) 
+{ 
+    .cards
+    {
+    padding-inline: 10px;
+    display: block;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    }
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) 
+{ 
+
+}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) 
+{ 
+    .cards
+    {
+    padding-inline: 10px;
+    display: block;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    }
+}
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px)
+{ 
+    .cards
+    {
+    padding-inline: 10px;
+    display: block;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(3,1fr);
+    }
+}
